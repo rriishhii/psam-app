@@ -1502,8 +1502,8 @@
 <script>
   /* Supabase Dashboard -> Project Settings -> API. The anon/public key is meant to be in the page:
      access is enforced by the row-level-security policies in supabase_all_in_one.sql. NEVER put the service_role key here. */
-  const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
-  const SUPABASE_ANON_KEY = "YOUR-ANON-PUBLIC-KEY";
+  const SUPABASE_URL = "https://bphuhyzqbzlqccsyvogu.supabase.co";
+  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJwaHVoeXpxYnpscWNjc3l2b2d1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAyMzkzNDUsImV4cCI6MjEwNTgxNTM0NX0.riffgOcolCg89NgqCHIbGya8IGlLOnizqvkG704UBjk";
   // persistSession:false keeps the sign-in in memory only (nothing in localStorage/IndexedDB), so people sign in
   // again after a reload. "implicit" flow keeps email-link sign-ins working without browser storage.
   const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
