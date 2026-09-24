@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
 <!-- Security: scripts may only come from this page and jsDelivr; the page may only talk to Supabase (no other host can receive data);
-     no plugins, no <base> tricks, no form posts. (The app uses inline handlers, so 'unsafe-inline' is still needed for scripts.)
+     no plugins, no <base> tricks, no form posts.
      If you move to a Supabase custom domain, add it to connect-src. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
@@ -1517,8 +1517,8 @@
 <script>
   /* Supabase Dashboard -> Project Settings -> API. The anon/public key is meant to be in the page:
      access is enforced by the row-level-security policies in supabase_all_in_one.sql. NEVER put the service_role key here. */
-  const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
-  const SUPABASE_ANON_KEY = "YOUR-ANON-PUBLIC-KEY";
+  const SUPABASE_URL = "https://bphuhyzqbzlqccsyvogu.supabase.co";
+  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJwaHVoeXpxYnpscWNjc3l2b2d1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAyMzkzNDUsImV4cCI6MjEwNTgxNTM0NX0.riffgOcolCg89NgqCHIbGya8IGlLOnizqvkG704UBjk";
   // persistSession:false keeps the sign-in in memory only (nothing in localStorage/IndexedDB), so people sign in
   // again after a reload. "implicit" flow is needed for Google sign-in to work without browser storage.
   const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
